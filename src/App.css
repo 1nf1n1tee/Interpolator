@@ -1,0 +1,79 @@
+/* Reset some default margins */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Main layout: sidebar + main area */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #db4520;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 450px;
+  min-width: 250px;
+  background-color: #5471cf;
+  padding: 16px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+/* Sidebar sections */
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.sidebar label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.sidebar input, .sidebar select {
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  border: 1px solid #423a3a;
+  border-radius: 4px;
+}
+
+.sidebar button {
+  padding: 6px 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  background-color: #97af2b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #1e4eb6;
+}
+
+/* Node table */
+.node-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.node-table th, .node-table td {
+  border: 1px solid #912929;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+/* Main content (chart) */
+.main-content {
+  flex: 1;
+  padding: 16px;
+}
